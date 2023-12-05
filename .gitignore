@@ -1,0 +1,15 @@
+.idea/
+/DBUpdateCheckService/__pycache__/
+/DBUpdateService/.ipynb_checkpoints/
+/github-access-token.txt
+aws_env_creds.env
+*.env
+/ProductivityCalculationService/__pycache__
+/DBUpdateCheckService/__pycache__
+__pycache__/
+*.pyc
+docker-build.sh
+./docker-build.sh
+docker-secret.yaml
+./docker-secret.yaml
+sliit-aecs-aws-key.pem
