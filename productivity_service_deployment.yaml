@@ -2,10 +2,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: developeriq-productivity-calc-service
+  name: developeriq-productivity-calc
 spec:
   selector:
-    app: developeriq-productivity-calc-service
+    app: developeriq-productivity-calc
   ports:
   - name: http
     protocol: "TCP"
