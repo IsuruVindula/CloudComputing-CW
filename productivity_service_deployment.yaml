@@ -17,16 +17,16 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: developeriq-productivity-calc-service
+  name: developeriq-productivity-calc
 spec:
   selector:
     matchLabels:
-      app: developeriq-productivity-calc-service
+      app: developeriq-productivity-calc
   replicas: 1
   template:
     metadata:
       labels:
-        app: developeriq-productivity-calc-service
+        app: developeriq-productivity-calc
     spec:
       imagePullSecrets:
         - name: developeriqsecret
