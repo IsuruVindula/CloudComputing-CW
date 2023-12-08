@@ -34,8 +34,7 @@ spec:
       - name: developeriq-cache-update-check
         image: 227376926882.dkr.ecr.eu-north-1.amazonaws.com/cloudcomputingcw:latest
         imagePullPolicy: Always
-        # command: ["python3","DBUpdateCheckService/github_data_api.py"]
-        command: ["ls"]
+        command: ["python3","UpdateCheckService/github_data_api.py"]
         ports:
           - containerPort: 8001
 
