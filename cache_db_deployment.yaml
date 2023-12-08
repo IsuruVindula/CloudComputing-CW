@@ -29,7 +29,7 @@ spec:
         app: developeriq-cache-db
     spec:
       imagePullSecrets:
-        - name: developeriq-registry-key
+        - name: developeriqsecret
       containers:
       - name: developeriq-cache-update-check
         image: 227376926882.dkr.ecr.eu-north-1.amazonaws.com/cloudcomputingcw:latest
