@@ -5,7 +5,7 @@ metadata:
   name: developeriq-productivity-calc-service
 spec:
   selector:
-    app: developeriq-productivity-calc
+    app: developeriq-productivity-calc-service
   ports:
   - name: http
     protocol: "TCP"
@@ -17,16 +17,16 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: developeriq-productivity-calc
+  name: developeriq-productivity-calc-service
 spec:
   selector:
     matchLabels:
-      app: developeriq-productivity-calc
+      app: developeriq-productivity-calc-service
   replicas: 1
   template:
     metadata:
       labels:
-        app: developeriq-productivity-calc
+        app: developeriq-productivity-calc-service
     spec:
       imagePullSecrets:
         - name: developeriqsecret
