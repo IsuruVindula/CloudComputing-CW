@@ -5,7 +5,7 @@ metadata:
   name: developeriq-cache-db-service
 spec:
   selector:
-    app: developeriq-cache-db-service
+    app: developeriq-cache-db
   ports:
   - name: http
     protocol: "TCP"
