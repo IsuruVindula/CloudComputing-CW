@@ -10,7 +10,7 @@ from pydantic import BaseModel
 import uvicorn
 import requests
 import boto3
-import numpy as np
+# import numpy as np
 import ast
 from boto3.dynamodb.conditions import Key
 from DecimalEncoder import DecimalEncoder
@@ -81,7 +81,7 @@ def calculate_contributor_productivity(raw_contributor_metrics:Dict):
         print("ISSUES CREATED : ",issues_created)
         print("ISSUES_COMMENT_INTERACTIONS",issues_comment_interactions)
         if commit_deletions and commit_deletions and num_commits is not 0:
-            log_commit_contribution = round(np.log((commit_additions+commit_deletions)/num_commits),1)
+            # log_commit_contribution = round(np.log((commit_additions+commit_deletions)/num_commits),1)
         else:
             log_commit_contribution = 0
         issue_contribution = issues_created+issues_comment_interactions
