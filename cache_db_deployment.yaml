@@ -9,7 +9,7 @@ spec:
   ports:
   - name: http
     protocol: "TCP"
-    port: 7001 #Port which kubernetes service runs on
+    port: 8001 #Port which kubernetes service runs on
     targetPort: 8001
   type: LoadBalancer
 
