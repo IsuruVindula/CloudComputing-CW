@@ -5,7 +5,7 @@ metadata:
   name: developeriq-productivity-calc-green
 spec:
   selector:
-    app: ddeveloperiq-productivity-calc-green
+    app: developeriq-productivity-calc-green
   ports:
   - name: http
     protocol: "TCP"
