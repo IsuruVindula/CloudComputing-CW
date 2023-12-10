@@ -25,7 +25,7 @@ columns = ["contribution_stats"]
 
 @app.get("/")
 def ping():
-    return "PRODUCTIVITY CALCULATION SERVICE PING SUCCESSFUL : 200"
+    return "PRODUCTIVITY CALCULATION SERVICE PING SUCCESSFUL : 200.......THIS IS GREEN DEPLOYMENT"
 
 # @app.get("/contributor-productivity")
 # def get_contributor_productivity_calculation(repo:str,organization:str,contributor_login:str):
