@@ -16,7 +16,7 @@ spec:
                 name: app1
                 port:
                   number: 8080
-          - path: /v2
+          - path: /v3
             pathType: Prefix
             backend:
               service:
