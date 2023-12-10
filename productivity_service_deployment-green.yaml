@@ -32,8 +32,8 @@ spec:
         - name: developeriqsecret
       containers:
       - name: developeriq-productivity-calc
-        image: 227376926882.dkr.ecr.eu-north-1.amazonaws.com/cloudcomputingcw:latest
-        command: ["python3","ProductivityCalculationService/productivity_calculation_service.py"]
+        image: 227376926882.dkr.ecr.eu-north-1.amazonaws.com/cloudcomputingcw:green
+        command: ["python3","ProductivityCalculationService/productivity_calculation_service-green.py"]
         imagePullPolicy: Always
         ports:
         - containerPort: 8002
