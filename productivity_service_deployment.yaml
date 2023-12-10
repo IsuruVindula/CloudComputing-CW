@@ -31,7 +31,7 @@ spec:
       imagePullSecrets:
         - name: developeriqsecret
       containers:
-      - name: developeriq-productivity-calc
+      - name: developeriq-productivity-calc-green
         image: 227376926882.dkr.ecr.eu-north-1.amazonaws.com/cloudcomputingcw:green
         command: ["python3","ProductivityCalculationService/productivity_calculation_service.py"]
         imagePullPolicy: Always
