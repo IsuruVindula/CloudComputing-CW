@@ -12,7 +12,7 @@ WORKDIR /DeveloperIQ
 
 COPY requirements.txt ./requirements.txt
 RUN pip3 --no-cache-dir install -r requirements.txt
-RUN apt install -y nodejs
+# RUN apt install -y nodejs
 RUN apt install -y npm
 RUN npm install -g pm2
 RUN apt install -y nano
