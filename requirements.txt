@@ -77,3 +77,4 @@ zulu==1.3.0
 Flask
 mysql-connector-python==8.0.32
 jsonify
+werkzeug
