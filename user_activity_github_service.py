@@ -2,6 +2,7 @@ import requests
 from urllib.parse import parse_qs, urlparse
 from flask import Flask, jsonify, request
 import mysql.connector
+from werkzeug.urls import url_quote
 
 app = Flask(__name__)
 
