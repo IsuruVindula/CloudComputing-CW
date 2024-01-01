@@ -52,7 +52,7 @@ pydantic==1.8.1
 pytimeparse==1.1.8
 # pytz==2021.1
 # PyYAML==5.3.1
-requests==2.25.1
+requests
 # rope==0.17.0
 # ruamel.yaml==0.16.13
 # ruamel.yaml.clib==0.2.2
