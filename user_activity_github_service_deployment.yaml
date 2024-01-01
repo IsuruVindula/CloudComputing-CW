@@ -2,10 +2,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: user_activity_github_service
+  name: user-activity-github-service
 spec:
   selector:
-    app: user_activity_github_service
+    app: user-activity-github-service
   ports:
   - name: http
     protocol: "TCP"
@@ -17,21 +17,21 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: user_activity_github_service
+  name: user-activity-github-service
 spec:
   selector:
     matchLabels:
-      app: user_activity_github_service
+      app: user-activity-github-service
   replicas: 1
   template:
     metadata:
       labels:
-        app: user_activity_github_service
+        app: user-activity-github-service
     spec:
       imagePullSecrets:
         - name: developeriqsecret
       containers:
-      - name: user_activity_github_service
+      - name: user-activity-github-service
         image: 227376926882.dkr.ecr.eu-north-1.amazonaws.com/cloudcomputingcw:latest
         command: ["python3","user_activity_github_service.py"]
         imagePullPolicy: Always
