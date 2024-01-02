@@ -256,6 +256,9 @@ def get_github_issues():
         'Developer Closed Issues Count': closed_issues_count_user,
     })
 
+@app.route('/get_github_commits_count_main', methods=['GET'])
+def get_github_commits_count_main():
+    print("Hello!!!, user activity")
 
 
 
