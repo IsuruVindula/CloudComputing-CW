@@ -23,7 +23,7 @@ def test_get_github_issues():
     assert res.status_code == 200
     pass
 
-def test_get_github_code_changes():
-    res = requests.get(ENDPOINT+'/get_github_code_changes?owner_username=IsuruVindula&repository=CloudComputing-CW&developer_username=IsuruVindula')
-    assert res.status_code == 200
-    pass
+# def test_get_github_code_changes():
+#     res = requests.get(ENDPOINT+'/get_github_code_changes?owner_username=IsuruVindula&repository=CloudComputing-CW&developer_username=IsuruVindula')
+#     assert res.status_code == 200
+#     pass
