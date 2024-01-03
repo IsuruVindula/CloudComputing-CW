@@ -155,6 +155,7 @@ if __name__ == "__main__":
     delay  = int(args.delay)
     time.sleep(5)
     db_actions = DBActions(organization,repository)
+    #test jenkins
     # response = db_actions.update_all_contributors(delay)
     # print(f"\n RESPONSE : {response}")
 
