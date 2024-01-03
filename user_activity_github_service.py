@@ -19,9 +19,6 @@ def create_connection():
 # Call create_connection() function to establish a database connection
 db = create_connection()
 
-@app.get("/home")
-def ping():
-    return ("api is working")
 
 def get_repo_commits(owner_name, repo_name, developer_user):
     """
