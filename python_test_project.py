@@ -4,7 +4,7 @@ import requests
 ENDPOINT="http://16.171.58.216:5000"
 
 def test_home():
-    res = requests.get(ENDPOINT+'/home')
+    res = requests.get(ENDPOINT+'/')
     assert res.status_code == 200
     pass
 
