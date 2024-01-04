@@ -6,13 +6,43 @@ from werkzeug.urls import url_quote
 
 app = Flask(__name__)
 
+import boto3
+from botocore.exceptions import ClientError
+import json
+
+def get_secret():
+
+    secret_name = "database_secret"
+    region_name = "eu-north-1"
+
+    # Create a Secrets Manager client
+    session = boto3.session.Session()
+    client = session.client(
+        service_name='secretsmanager',
+        region_name=region_name
+    )
+
+    try:
+        get_secret_value_response = client.get_secret_value(
+            SecretId=secret_name
+        )
+    except ClientError as e:
+        # For a list of exceptions thrown, see
+        # https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html
+        raise e
+
+    secret = json.loads(get_secret_value_response['SecretString'])
+
+    return secret
+
 # Establish a connection to the database
 def create_connection():
     connection = mysql.connector.connect(
-        host="isuru-database-2.c1wakw0y4b18.eu-north-1.rds.amazonaws.com",
-        user="admin",
-        password="cde3CDE#",
-        database="isuru_database_table_2"
+        host=cred['host'],
+        port=cred['port'],
+        user=cred['username'],
+        password=cred['password'],
+        database=cred['dbname']
     )
     return connection
 
